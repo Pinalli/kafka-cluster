@@ -1,0 +1,8 @@
+start docker ->  docker-compose up -d
+
+docker bash -> docker exec -it kafka-cluster-kafka-1-1 bash
+
+ kafka-topics --create --bootstrap-server localhost:29092 --replication-factor 3 --partitions 3 --topic  topic1
+ LIST
+    kafka-topics --list --bootstrap-server localhost:29092
+
