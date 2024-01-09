@@ -1,0 +1,9 @@
+start docker ->  docker-compose up -d
+
+docker bash -> docker exec -it kafkaconnect-mysql-elasticsearch-mysql-1 bash
+
+mysql -uroot -p
+password: root
+
+use products
+create table products(id int primary key,   name varchar (255));
